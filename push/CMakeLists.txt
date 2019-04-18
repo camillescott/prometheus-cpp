@@ -10,6 +10,7 @@ add_library(${PROJECT_NAME}::push ALIAS push)
 target_link_libraries(push
   PUBLIC
     ${PROJECT_NAME}::core
+    rt
   PRIVATE
     Threads::Threads
     ${CURL_LIBRARIES}
