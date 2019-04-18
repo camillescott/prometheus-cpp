@@ -11,6 +11,7 @@ target_link_libraries(push
   PUBLIC
     ${PROJECT_NAME}::core
     rt
+    ${CURL_LIBRARIES}
   PRIVATE
     Threads::Threads
     ${CURL_LIBRARIES}
